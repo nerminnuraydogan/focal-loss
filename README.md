@@ -11,7 +11,7 @@ The starting point of the focal loss is to investigate the case of two-stage det
 
 There are two type of models in object detectors. One-stage detectors and two-stage detectors. Two stage detectors uses (1-)Region Proposal and (2-)Classification. The first stage generates a sparse set of candidate proposals and the second stage classifies the porposals into classification. One-stage detectors on the otherhand, skips the region proposal part and run detection directly over a **dense** sampling of locations.
 
-<img src="https://user-images.githubusercontent.com/46245117/235455888-398a1532-62eb-4092-890b-0985ea4b9b21.PNG" width=70% height=70%>
+<img src="https://user-images.githubusercontent.com/46245117/235455888-398a1532-62eb-4092-890b-0985ea4b9b21.PNG" width=50% height=50%>
 
 Running detection over a dense sampling  results in **foreground-background class imbalance** wihch can be described as having a high ratio of (ex: 1:100 ) foreground-background class predictions.
 
