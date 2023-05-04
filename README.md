@@ -19,7 +19,7 @@ Running detection over a dense sampling  results in **foreground-background clas
 
 The loss contribution of a well-classified(model output with a probability of >0.6 for ground truth class ) background class example is non-negligible and overall they exhaust the loss with no useful learning because they have a high ratio over the foreground examples.
 
-<img src="https://user-images.githubusercontent.com/46245117/235458947-65117ba8-e39e-4994-9c76-6ab071b81738.PNG" width=50% height=50%>
+<img src="https://user-images.githubusercontent.com/46245117/236293342-4ef79179-5120-4de8-8bdd-c738ae34d930.PNG" width=50% height=50%>
 
 To address this class imbalance in one-stage detectors, researches in Facebook AI proposes Focal Loss that introduces a factor that down-weights the cross entropy loss assigned to the well-classified examples to focus on foreground examples which have rich information.
 
